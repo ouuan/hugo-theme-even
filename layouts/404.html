@@ -1,11 +1,10 @@
+{{- define "title" }}404 page not found - {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
 <script>
 if (!window.location.pathname.match(/^\/post/))
   window.location.pathname = '/post' + window.location.pathname;
 </script>
-
-{{- define "title" }}404 page not found - {{ .Site.Title }}{{ end -}}
-
-{{- define "content" -}}
 <div class="not-found">
   <h1 class="error-emoji"></h1>
   <p class="error-text">/* 404 page not found. */</p>
