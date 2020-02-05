@@ -4,6 +4,8 @@
 <script>
 if (!window.location.pathname.match(/^\/post/))
   window.location.pathname = '/post' + window.location.pathname.toLowerCase();
+else if (window.location.pathname.toLowerCase() != window.location.pathname)
+  window.location.pathname = window.location.pathname.toLowerCase();
 </script>
 <div class="not-found">
   <h1 class="error-emoji"></h1>
