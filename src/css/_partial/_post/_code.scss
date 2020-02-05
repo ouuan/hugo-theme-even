@@ -56,13 +56,17 @@ figure.highlight {
     pre {
       margin: 0;
       padding: 30px 7px 10px;
+
+      div {
+        text-align: right;
+      }
     }
   }
 
   .line {
     // Fix code block null line height and
     // Synchronous gutter and code line highly.
-    height: round($code-font-size * 1.5);
+    height: $code-font-size * 1.2;
   }
 
   table, tr, td {
