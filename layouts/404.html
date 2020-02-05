@@ -7,6 +7,8 @@
   <p class="error-link"><a href="{{ "/" | relLangURL }}">↑ Back Home ↑</a></p>
 </div>
 <script>
+  if (!window.location.pathname.match(/^\/post/))
+    window.location.pathname = '/post' + window.location.pathname;
   var errorEmojiContainer = document.getElementsByClassName('error-emoji')[0];
   var emojiArray = [
     '\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)',
