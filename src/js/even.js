@@ -55,7 +55,7 @@ Even._initToc = function() {
 
   if ($toc.length) {
     const minScrollTop = $toc.offset().top - SPACING;
-    const maxScrollTop = $footer.offset().top - $toc.height() - SPACING;
+    const maxScrollTop = 1000000; // INF
 
     const tocState = {
       start: {
