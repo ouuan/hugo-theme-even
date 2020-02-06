@@ -2,7 +2,7 @@
 
 {{- define "content" -}}
 <script>
-var path = window.location.pathname.toLowerCase().replace('、', '');
+var path = window.location.pathname.toLowerCase().replace(/%e3%80%81/g, '');
 if (!window.location.pathname.match(/^\/post/))
   window.location.pathname = '/post' + path;
 else if (window.location.pathname != path)
