@@ -22,4 +22,15 @@ else if (window.location.pathname != path)
   var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
   errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
 </script>
+<p style="text-align: center;"><strong>如果您是从博客内点进来的，请在下方 <a href="https://github.com/ouuan/hexo-blog-utterances/issues/35">评论区</a> 写下您是从哪点进来的</strong></p>
+<div class="comments">
+  <script src="https://utteranc.es/client.js"
+      repo="ouuan/hexo-blog-utterances"
+      issue-term="title"
+      label="utterances"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+  </script>
+</div>
 {{- end -}}
