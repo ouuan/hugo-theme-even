@@ -2,7 +2,7 @@
 
 {{- define "content" -}}
 <script>
-var path = window.location.pathname.toLowerCase().replace(/%e3%80%81|%e2%80%94|%ef%bc%88|%ef%bc%89|%E3%80%8C|%e3%80%8d|%ef%bc%8c|%E3%80%90|%E3%80%91/g, '');
+var path = window.location.pathname.toLowerCase().replace(/%e3%80%81|%e2%80%94|%ef%bc%88|%ef%bc%89|%e3%80%8c|%e3%80%8d|%ef%bc%8c|%e3%80%90|%e3%80%91/g, '');
 if (!window.location.pathname.match(/^\/post/))
   window.location.pathname = '/post' + path;
 else if (window.location.pathname != path)
