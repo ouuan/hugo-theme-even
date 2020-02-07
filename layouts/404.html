@@ -2,7 +2,7 @@
 
 {{- define "content" -}}
 <script>
-var path = window.location.pathname.toLowerCase().replace(/%e3%80%81/g, '');
+var path = window.location.pathname.toLowerCase().replace(/%e3%80%81|%e2%80%94|%ef%bc%88|%ef%bc%89|%E3%80%8C|%e3%80%8d|%ef%bc%8c|%E3%80%90|%E3%80%91/g, '');
 if (!window.location.pathname.match(/^\/post/))
   window.location.pathname = '/post' + path;
 else if (window.location.pathname != path)
@@ -22,7 +22,7 @@ else if (window.location.pathname != path)
   var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
   errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
 </script>
-<p style="text-align: center;"><strong>如果您是从博客内点进来的，请在下方 <a href="https://github.com/ouuan/hexo-blog-utterances/issues/35">评论区</a> 写下您是从哪点进来的</strong></p>
+<p style="text-align: center;"><strong>如果您是从博客内点进来的，或是从指向旧版博客的链接点进来的，请在下方 <a href="https://github.com/ouuan/hexo-blog-utterances/issues/35">评论区</a> 写下您是从哪点进来的（URL 具体是什么）</strong></p>
 <div class="comments">
   <script src="https://utteranc.es/client.js"
       repo="ouuan/hexo-blog-utterances"
