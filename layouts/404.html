@@ -1,13 +1,6 @@
 {{- define "title" }}404 page not found - {{ .Site.Title }}{{ end -}}
 
 {{- define "content" -}}
-<script>
-var path = window.location.pathname.toLowerCase().replace(/%e3%80%81|%e2%80%94|%ef%bc%88|%ef%bc%89|%e3%80%8c|%e3%80%8d|%ef%bc%8c|%e3%80%90|%e3%80%91/g, '');
-if (!window.location.pathname.match(/^\/post/))
-  window.location.pathname = '/post' + path;
-else if (window.location.pathname != path)
-  window.location.pathname = path;
-</script>
 <div class="not-found">
   <h1 class="error-emoji"></h1>
   <p class="error-text">/* 404 page not found. */</p>
