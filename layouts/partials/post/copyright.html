@@ -6,7 +6,7 @@
   </p>
   <p class="copyright-item">
     <span class="item-title">{{ T "lastMod" }}</span>
-    <span class="item-content">
+    <span class="item-content" title="{{ .Lastmod }}">
         {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
         {{ with .GitInfo }}<a href="{{ $.Site.Params.gitRepo }}/commit/{{ .Hash }}" title="{{ .Subject }}" target="_blank">({{ .AbbreviatedHash }})</a>{{ end }}
     </span>
