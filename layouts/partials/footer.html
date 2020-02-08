@@ -45,7 +45,7 @@
     {{ end }}
     {{- $current }}
     <span class="heart">
-      <i class="iconfont icon-heart"></i>
+      <a class="iconfont icon-github" title="source code" href="{{ $.Site.Params.gitRepo }}" target="_blank"></a>
     </span>
     <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
   </span>
