@@ -1,6 +1,7 @@
 <!-- highlight.js -->
 {{- if .Site.Params.highlightInClient -}}
   <script src="{{ "lib/highlight/highlight.pack.js?v=20171001" | relURL }}"></script>
+  <link href="https://cdn.bootcss.com/highlight.js/9.15.10/styles/tomorrow.min.css" rel="stylesheet">
   <script>hljs.configure({tabReplace: '    '});</script>
 {{- end -}}
 

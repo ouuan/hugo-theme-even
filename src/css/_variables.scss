@@ -258,7 +258,7 @@ $code-type-list: (
 
 // Color of the code background.
 $code-background: $deputy-color !default;
-
+$pre-background: $deputy-color !default; // Useful for dark themes
 
 // ========== Pagination ========== //
 // Margin of the pagination.
