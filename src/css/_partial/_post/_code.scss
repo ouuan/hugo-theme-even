@@ -18,6 +18,23 @@ code {
   color: $code-color;
 }
 
+.highlight-wrapper {
+  position: relative;
+}
+
+.copy-code {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  font-size: .9em !important;
+  padding: 1px 7px !important;
+  border-radius: 5px !important;
+}
+
+.copy-code:hover {
+  cursor: pointer;
+}
+
 // highlight.js
 figure.highlight {
   margin: 1em 0;
@@ -25,6 +42,7 @@ figure.highlight {
   overflow-x: auto;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
   position: relative;
+  padding: 0;
 
   table {
     position: relative;
@@ -224,4 +242,68 @@ figure.highlight {
   /* GenericStrong */  .gs { color: #d33682 }
   /* GenericSubheading */  .gu { color: #d33682 }
   /* GenericTraceback */  .gt { color: #d33682 }
+}
+
+// bootstray.css
+
+.btn{
+  display:inline-block;
+  font-weight:400;
+  color:#212529;
+  text-align:center;
+  vertical-align:middle;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  background-color:transparent;
+  border:1px solid transparent;
+  padding:.375rem .75rem;
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+@media (prefers-reduced-motion:reduce){
+  .btn{
+      transition:none
+  }
+}
+.btn:hover{
+  color:#212529;
+  text-decoration:none
+}
+.btn.focus,.btn:focus{
+  outline:0;
+  box-shadow:0 0 0 .2rem rgba(0,123,255,.25)
+}
+.btn.disabled,.btn:disabled{
+  opacity:.65
+}
+a.btn.disabled,fieldset:disabled a.btn{
+  pointer-events:none
+}
+.btn-outline-secondary{
+  color:#6c757d;
+  border-color:#6c757d
+}
+.btn-outline-secondary:hover{
+  color:#fff;
+  background-color:#6c757d;
+  border-color:#6c757d
+}
+.btn-outline-secondary.focus,.btn-outline-secondary:focus{
+  box-shadow:0 0 0 .2rem rgba(108,117,125,.5)
+}
+.btn-outline-secondary.disabled,.btn-outline-secondary:disabled{
+  color:#6c757d;
+  background-color:transparent
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active,.btn-outline-secondary:not(:disabled):not(.disabled):active,.show>.btn-outline-secondary.dropdown-toggle{
+  color:#fff;
+  background-color:#6c757d;
+  border-color:#6c757d
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,.show>.btn-outline-secondary.dropdown-toggle:focus{
+  box-shadow:0 0 0 .2rem rgba(108,117,125,.5)
 }
