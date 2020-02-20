@@ -1,4 +1,4 @@
 <div class="admonition question">
-  <p class="admonition-title">题目描述</p>
+  <p class="admonition-title">{{ with .Get 0 }}{{ . }}{{ else }}题目描述{{ end }}</p>
   {{ .Inner }}
 </div>
