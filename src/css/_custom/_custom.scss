@@ -2,3 +2,22 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+
+.comments {
+    position: relative;
+    min-height: 5rem;
+
+    div.utterances {
+        background-color: $global-background;
+    }
+
+    .loading {
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 5rem;
+        height: 5rem;
+        left: 50%;
+        margin-left: -2.5rem;
+    }
+}

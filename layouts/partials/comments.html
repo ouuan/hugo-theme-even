@@ -125,6 +125,8 @@
 
   <!-- utterances -->
   {{- if .Site.Params.utterances.owner}}
+  <p class="comments">
+    <img class="loading" src="/img/spinner.svg">
     <script src="https://utteranc.es/client.js"
             repo="{{ .Site.Params.utterances.owner }}/{{ .Site.Params.utterances.repo }}"
             issue-term="title"
@@ -133,6 +135,7 @@
             async>
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+  </p>
   {{- end }}
 
 {{- end }}
