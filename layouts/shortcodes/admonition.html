@@ -3,14 +3,14 @@
   {{ if eq (.Get "details") true -}}
 
 <details class="admonition {{ .Get "type" }}">
-  {{- with .Get "title" }}<summary class="admonition-title">{{ . }}</summary>{{ end }}
+  {{- with .Get "title" }}<summary class="admonition-title">{{ safeHTML . }}</summary>{{ end }}
   {{ .Inner }}
 </details>
 
   {{- else -}}
 
 <div class="admonition {{ .Get "type" }}">
-  {{- with .Get "title" }}<p class="admonition-title">{{ . }}</p>{{ end }}
+  {{- with .Get "title" }}<p class="admonition-title">{{ safeHTML . }}</p>{{ end }}
   {{ .Inner }}
 </div>
 
@@ -21,14 +21,14 @@
   {{ if eq (.Get 2) true -}}
 
 <details class="admonition {{ .Get 0 }}">
-  {{- with .Get 1 }}<summary class="admonition-title">{{ . }}</summary>{{ end }}
+  {{- with .Get 1 }}<summary class="admonition-title">{{ safeHTML . }}</summary>{{ end }}
   {{ .Inner }}
 </details>
 
   {{- else -}}
 
 <div class="admonition {{ .Get 0 }}">
-  {{- with .Get 1 }}<p class="admonition-title">{{ . }}</p>{{ end }}
+  {{- with .Get 1 }}<p class="admonition-title">{{ safeHTML . }}</p>{{ end }}
   {{ .Inner }}
 </div>
 
