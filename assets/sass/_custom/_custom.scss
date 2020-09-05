@@ -5,19 +5,27 @@
 
 .comments {
     position: relative;
-    min-height: 5rem;
+    min-height: 10rem;
 
     div.utterances {
         background-color: $global-background;
+        z-index: 1;
     }
 
     .loading {
         position: absolute;
-        display: block;
-        z-index: -1;
-        width: 5rem;
-        height: 5rem;
-        left: 50%;
-        margin-left: -2.5rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+
+        img {
+            position: relative;
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            left: 50%;
+            margin-left: -2.5rem;
+        }
     }
 }
