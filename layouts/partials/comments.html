@@ -130,7 +130,7 @@
       <img src="/img/spinner.svg">
       <p class="post-content">
         评论正在加载中...如果评论较长时间无法加载，你可以
-        <a href="https://github.com/ouuan/blog-comments/issues?q=is%3Aissue+is%3Aopen+{{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}" target="_blank">搜索对应的 issue</a>
+        <a href='https://github.com/ouuan/blog-comments/issues?q=is%3Aissue+is%3Aopen+"{{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}"' target="_blank">搜索对应的 issue</a>
         或者
         <a href="https://github.com/ouuan/blog-comments/issues/new?title={{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}" target="_blank">新建一个 issue</a>
         。
