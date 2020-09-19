@@ -36,6 +36,10 @@ code {
   cursor: pointer;
 }
 
+pre > code {
+  display: block;
+}
+
 // highlight.js
 figure.highlight {
   margin: 1em 0;
