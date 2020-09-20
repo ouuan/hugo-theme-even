@@ -159,11 +159,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     placeholder = '说点什么吧...'
     visitor = false
 
-  [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
+  [params.flowchartDiagrams]# see https://hugo-theme-even.netlify.app/post/js-flowchart-diagrams/
     enable = false
     options = ""
 
-  [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
+  [params.sequenceDiagrams] # see https://hugo-theme-even.netlify.app/post/js-sequence-diagrams/
     enable = false
     options = ""            # default: "{theme: 'simple'}"
 
