@@ -29,3 +29,13 @@
         }
     }
 }
+
+// https://github.com/theme-next/hexo-theme-next/pull/1314#discussion_r376763718
+
+mjx-container[jax="CHTML"][display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container + br {
+  display: none;
+}
