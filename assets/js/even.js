@@ -53,7 +53,6 @@ Even._initToc = function() {
   const $toc = $('.post-toc');
   const $footer = $('.post-footer');
 
-
   const HEADERFIX = 30;
   const $toclink = $('.toc-link');
   const $headerlink = $('.headerlink');
