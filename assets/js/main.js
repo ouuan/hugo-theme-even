@@ -10,7 +10,7 @@ Even.flowchart();
 Even.sequence();
 
 if (window.hljs) {
-  hljs.initHighlighting();
+  hljs.initHighlighting(); // hljs.highlightAll doesn't work
   Even.highlight();
 } else {
   Even.chroma();
