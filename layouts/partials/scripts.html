@@ -71,6 +71,24 @@
   {{ template "_internal/google_analytics_async.html" . }}
 {{- end -}}
 
+{{- with .Site.Params.matomoAnalytics -}}
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var u="//{{ .url }}/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '{{ .id }}']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+{{- end -}}
+
 {{- with .Site.Params.baiduAnalytics -}}
 <script id="baidu_analytics">
   var _hmt = _hmt || [];
